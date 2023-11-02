@@ -61,8 +61,6 @@ def insertion_sort(items, sort="asc"):
             while j >= 0 and items[j] < current:
                 items[j + 1] = items[j]
                 j -= 1
-        else:
-            raise ValueError("Invalid sort order")
 
         items[j + 1] = current
 
@@ -70,34 +68,34 @@ def insertion_sort(items, sort="asc"):
 
 items = [3,1,7,0]
 bubble_sort(items, "asc")
-print(items) #should print [0, 1, 3, 7]
+print(items)
 
 print("-"*12)
 
 items = [3,1,7,0]
 bubble_sort(items, "dsc")
-print(items) #should print [7, 3, 1, 0]
+print(items) 
 
 print("-"*12)
 
-items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-selection_sort(items, "asc")
-print(items)
+# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+# selection_sort(items, "asc")
+# print(items)
 
-print("-"*12)
+# print("-"*12)
 
-items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-selection_sort(items, "dsc")
-print(items)
+# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+# selection_sort(items, "dsc")
+# print(items)
 
-print("-"*12)
+# print("-"*12)
 
-items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-insertion_sort(items, "asc")
-print(items)
+# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+# insertion_sort(items, "asc")
+# print(items)
 
-print("-"*12)
+# print("-"*12)
 
-items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-insertion_sort(items, "dsc")
-print(items)
+# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+# insertion_sort(items, "dsc")
+# print(items)

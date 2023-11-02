@@ -13,11 +13,10 @@ def is_sorted(items, sort="asc"):
             
     return True
 
+# O(n^2)
 def bubble_sort(items, sort="asc"):
     """Sort given items by swapping adjacent items that are out of order, and
     repeating until all items are in sorted order. Why and under what conditions?"""
-    # TODO: Running time: ??? Why and under what conditions?
-    # TODO: Memory usage: ??? Why and under what conditions?
 
     def swap(arr, left_index, right_index):
         print(arr)
@@ -35,11 +34,10 @@ def bubble_sort(items, sort="asc"):
 
     return items
 
+# O(n^2)
 def selection_sort(items: list, sort="asc"):
     """Sort given items by finding minimum item, swapping it with first
     unsorted item, and repeating until all items are in sorted order."""
-    # TODO: Running time: ??? Why and under what conditions?
-    # TODO: Memory usage: ??? Why and under what conditions?
 
     for i in range(len(items) - 1): # ignore the last element with -1
         index = i
@@ -57,11 +55,10 @@ def selection_sort(items: list, sort="asc"):
 
     return items   
 
+# O(n^2)
 def insertion_sort(items, sort="asc"):
     """Sort given items by taking first unsorted item, inserting it in sorted
     order in front of items, and repeating until all items are in order."""
-    # TODO: Running time: ??? Why and under what conditions?
-    # TODO: Memory usage: ??? Why and under what conditions?
 
     for i in range(1, len(items)):
         current = items[i]
