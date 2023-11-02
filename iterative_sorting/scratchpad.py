@@ -31,6 +31,7 @@ def bubble_sort(items: list, sort="asc"):
 
 def selection_sort(items: list, sort="asc"):
     for i in range(len(items) - 1): # ignore the last element with -1
+        # Find the smallest (or largest) element in the remaining portion of the list.
         index = i
 
         for j in range(i + 1, len(items)):
@@ -46,7 +47,7 @@ def selection_sort(items: list, sort="asc"):
 
     return items
 
-def insertion_sort(items, sort="asc"):
+def insertion_sort(items: list, sort="asc"):
     """Sort given items by taking first unsorted item, inserting it in sorted
     order in front of items, and repeating until all items are in order."""
     for i in range(1, len(items)):
@@ -66,17 +67,18 @@ def insertion_sort(items, sort="asc"):
 
     return items
 
-items = [3,1,7,0]
-bubble_sort(items, "asc")
-print(items)
+#region: buh
+# items = [3,1,7,0]
+# bubble_sort(items, "asc")
+# print(items)
 
-print("-"*12)
+# print("-"*12)
 
-items = [3,1,7,0]
-bubble_sort(items, "dsc")
-print(items) 
+# items = [3,1,7,0]
+# bubble_sort(items, "dsc")
+# print(items) 
 
-print("-"*12)
+# print("-"*12)
 
 # items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
 # selection_sort(items, "asc")
@@ -89,13 +91,14 @@ print("-"*12)
 # print(items)
 
 # print("-"*12)
+#endregion
 
-# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-# insertion_sort(items, "asc")
-# print(items)
+items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+insertion_sort(items, "asc")
+print(items)
 
-# print("-"*12)
+print("-"*12)
 
-# items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
-# insertion_sort(items, "dsc")
-# print(items)
+items = [17,3,10,25,23,12,6,4,26,7,68,56,243,52345]
+insertion_sort(items, "dsc")
+print(items)
