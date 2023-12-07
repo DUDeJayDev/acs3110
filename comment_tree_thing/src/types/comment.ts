@@ -35,6 +35,8 @@ export class Comment {
             for (const child of childComments) {
                 const childComment = new Comment(child);
                 this.addChild(childComment);
+                console.log(this.values.body)
+                console.log(child.body)
                 await childComment.fetchChildren(db);
             }
 
